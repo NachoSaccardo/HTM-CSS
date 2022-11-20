@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 5</title>
+</head>
+<body>
+    
+    <h1>Formularios</h1>
+<form action="ruta del método que va a manejar la información" method="POST" enctype="multipart/form-data">
+    <p><input type="Nombre" id="nombre" placeholder="Nombre y Apellido"></p>
+    
+
+    <p><select name="estaciones" id="estaciones">
+        <option value="primavera">Primavera</option>
+        <option value="verano" selected>Verano</option>
+        <option value="invierno">Otoño</option>
+        <option value="otoño">Invierno</option>
+    </select></p>
+
+    <p><input type="radio" name="estacion" id="primavera" value="1">
+        <label for="primavera">Primavera</label>
+    <br>
+    <input type="radio" name="estacion" id="verano" value="2">
+    <label for="verano">Verano</label>
+    <br>
+    <input type="radio" name="estacion" id="otoño" value="3">
+    <label for="otoño">Otoño</label>
+    <br>
+    <input type="radio" name="estacion" id="invierno" value="4">
+    <label for="invierno">Invierno</label>
+    </p>
+
+    <p><input type="checkbox" name="estacion" value="1" id="primavera2"><label for="primavera2">Primavera</label></p>
+        <input type="checkbox" name="estacion" value="2" id="verano2"><label for="verano2">Verano</label></p>
+        <input type="checkbox" name="estacion" value="3" id="otoño2"><label for="otoño2">Otoño</label></p>
+        <input type="checkbox" name="estacion" value="4" id="invierno2"><label for="invierno2">Invierno</label></p>
+
+    </p>
+
+    <button type="submit" ><strong>Enviar</strong></button>
+    <button type="reset">Borrar</button>
+    <button type="button">Boton1</button>
+
+</form>
+
+</body>
+</html>
