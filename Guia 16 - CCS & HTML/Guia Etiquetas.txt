@@ -1,0 +1,129 @@
+<!DOCTYPE html> //Cabecera, obsoleta pero necesaria
+<html> //Abre la pagina web
+<head> //Encierra en encabezado, no se muestra en la pagina pero es info necesaria, como el juego de caracteres, titulo, info adicional
+<meta charset="utf-8"> //juego de caracteres que va a usar el documento
+<title>Mi página de prueba</title> //titulo que se muestra en la pestaña o en la barra del navegador
+</head> //cierro el encabezado
+
+<body> //contiene todo lo que se va a moestral
+<p> Cooperación Humana </p>
+</body>
+</html>
+
+EJEMPLO ETIQUETA CON ATRIBUTOS
+<etiqueta atributo1="valor1" atributo2="valor2">contenido</etiqueta>
+<a href="http://www.enlace.com" target="_blank">Ejemplo de enlace</a>
+Donde:
+• <a> es la etiqueta inicial y </a> la etiqueta de cierre.
+• href y target son los atributos.
+• http://www.enlace.com y _blank son las variables o valores de los atributos.
+• Ejemplo de enlace es el contenido.
+Nota: las etiquetas <img> y <a> las veremos en mayor profundidad más adelante.
+
+COMENTARIOS
+En un documento HTML, los comentarios se escriben entre los caracteres "<!--" y "-->". Por
+ejemplo:
+<!--Esto es un comentario en HTML-->
+
+ETIQUETAS
+<br> Salto de pagina (sin cierre)
+<strong>texto en negrita</strong>
+<i> Texto en itálica </i>
+<p align="left">Texto alineado a la izquierda</p>
+<p align="center">Texto alineado al centro</p>
+<p align="right">Texto alineado a la derecha</p>
+<u> Texto subrayado</u>
+
+ENCABEZADOS
+<h1> Encabezado de nivel 1 </h1>
+<h2> Encabezado de nivel 2 </h2> y etcetera
+Son en negrita, el tamaño cambia segun el numero de H (1 es el mas grande)
+La pagina lo entiende como titulo y mejora los motores de busqueda y la ayuda para ciegos
+Se pueden alinear
+<h2 align=”center”> Encabezado de nivel 2 </h2>
+
+LISTAS DESORDENADAS
+Son delimitadas por las etiquetas UL y su cierre (unordered list). Cada uno de los elementos de la
+lista es citado por medio de una etiqueta LI (list item).
+
+<p>Países del mundo</p>
+<ul>
+<li>Argentina</li>
+<li>Perú</li>
+<li>Chile</li>
+</ul>
+
+Tipos de viñetas
+Podemos definir el tipo de viñeta empleada para cada elemento. Para ello debemos especificarlo
+por medio del atributo type. Si queremos que el estilo sea válido para toda la lista lo incluiremos
+dentro de la etiqueta de apertura UL, mientras que si queremos hacerlo específico a un solo
+elemento lo incluiremos dentro de la etiqueta LI.
+La sintaxis es del siguiente tipo:
+<ul type="tipo de viñeta">
+Donde tipo de viñeta puede ser uno de los siguientes:
+• circle
+• disc
+• square
+
+<ul type="square">
+<li>Elemento 1 </li>
+<li>Elemento 2 </li>
+<li>Elemento 3 </li>
+<li type="circle">Elemento 4 </li>
+</ul>
+
+LISTAS ORDENADAS
+<p> Reglas de convivencia</p>
+<ol>
+<li> Respeta a tu compañero y escucha su opinión </li>
+<li> Trata amablemente a tu entorno </li>
+</ol>
+
+<ol type="1"> ordenado por numeros </ol>
+<ol type="a"> ordenado por letras</ol>
+<ol type="A"> ordenado por letras mayusculas</ol>
+<ol type="i"> ordenado por numeros romnanos</ol>
+<ol type="I"> ordenado por numeros romnanos mayusculas</ol>
+
+si quiero que arranque por otro numero o posicion, le agrego el atributo start="#" donde # es la posicion en la que quiero que empiece la lista
+<ol type="a" start="3"> ordenado por letras, comenzando por la "c"</ol>
+
+Enlaces Externos: Llevan a otra pagina
+<ahref="URL destino">Texto del enlace</a> 
+El URL va en formato: https://google.com
+
+Enlaces Internos: Llevan a otro lugar, otro archivo .html de esta misma pagina
+<a href="archivo.html">Texto del enlace</a>
+
+Hay que situarse mentalmente en el directorio en el que se encuentra la página donde vamos
+a crear el enlace.
+2) Si la página destino está en el mismo directorio que el archivo desde donde vamos a enlazar
+podemos colocar simplemente el nombre del archivo de destino, ya que no hay necesidad de
+cambiar de directorio.
+3) Si la página de destino está en una carpeta o subdirectorio interior al directorio donde está el
+archivo de origen, hemos de marcar la ruta enumerando cada uno de los directorios por los
+que pasamos hasta llegar al archivo de destino. Separándolos por el símbolo barra "/". Al final
+obviamente, escribimos el nombre del archivo destino.
+
+20
+4) Si la página destino se encuentra en un directorio padre (superior al de la página del enlace),
+hemos de escribir dos puntos y una barra "../" tantas veces como niveles subamos en la
+arborescencia hasta dar con el directorio donde está emplazado el archivo destino.
+Finalmente, también agregaremos el nombre del archivo destino
+5) Si la página se encuentra en otro directorio no incluido ni incluyente del archivo origen,
+tendremos que subir como en la regla 3 por medio de ".." hasta encontrar un directorio que
+englobe el directorio que contiene a la página destino. A continuación, haremos como en la
+regla 2. Escribiremos todos los directorios por los que pasamos hasta llegar al archivo.
+
+EJEMPLOS
+<p><a href="ejercicio1.html">Enlace Directo</a></p>
+
+<p><a href="../ejercicio1.html">Enlace en carpeta padre</a></p>
+Este archivo esta en un directorio padre del archivo que lo llama
+
+<p><a href="Ejemplos de directorio/ejercicio1.html">Enlace en subdirectorio</a></p>
+Este archivo esta en un subdirectorio dentro de la carpeta del que lo llama
+
+<p><a href="../../EasyUML/Ejemplos de directorio HTML/ejercicio1.html">Enlace lejano</a></p> 
+Este archivo esta en otra carpeta que no tiene nada que ver. Subi dos niveles, baje uno en EasyUML, baje otro en Ejemplos
+
