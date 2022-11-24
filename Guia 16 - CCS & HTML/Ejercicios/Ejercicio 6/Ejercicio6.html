@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+<h1>Registrar un usuario</h1>
+
+<form action="ruta del método que va a manejar la información" method="POST"
+enctype="multipart/form-data">
+
+    <label for="nombre">Nombre del usuario</label><br><input type="text" name="nombre" id="nombre" size="24"><br>
+    <label for="password">Contraseña</label><br><input type="password" name="password" id="password" size="24"><br>
+    <label for="edad">Edad del usuario</label><br><input type="number" name="edad" id="edad" size="24"><br>
+    <label for="nacimiento">Fecha de nacimiento del usuario</label><br><input type="date" name="nacimiento" id="nacimiento" size="24"><br>
+    <label>Sexo del usuario</label> <br>
+    <label for="hombre"><input type="radio" name="sexo" value="1" id="hombre">Hombre<br>
+    <label for="mujer"><input type="radio" name="sexo" value="2" id="mujer">Mujer<br>
+    <label for="na"><input type="radio" name="sexo" value="3" id="na">Prefiero no decir<br>
+    <label>País nacimiento del usuario</label> <br>
+    <select name="pais"> 
+    <option>Argentina</option> 
+    <option>Brasil</option> 
+    <option>Chile</option> 
+    <option>Uruguay</option> 
+    </select>
+    <br>
+    <button type="post">Enviar</button>
+    <button type="reset">Borrar</button>
+</form>
+
+</body>
+</html>
