@@ -1,0 +1,19 @@
+body{
+    background-color: aqua;
+}
+
+h1{
+    font: Arial;
+    text-align: center;
+}
+
+h2{
+    font: Times New Roman;
+    text-align: center;
+}
+
+p{
+    font: Verdana;
+    color:rgb(43, 92, 226);
+    text-align: left;
+}

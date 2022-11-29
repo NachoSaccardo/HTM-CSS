@@ -1,0 +1,84 @@
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+thead{
+    color: orange;
+}
+
+tfoot{
+    color: red;
+}
+
+td[strong]{
+    color: orange;
+}
+
+td{
+    color: green;
+    
+}
+
+th[scope="row"][class="especial"]:first-child{
+    color: orange;
+}
+  
+th[scope="row"]{
+    color: red;
+}
+
+h1{
+    color: rgb(54, 123, 127);
+}
+
+h2{
+    color: blue;
+}
+
+a:link{
+    color: red;
+}
+
+a:link em{
+    color: blue
+}
+
+a:visited{
+    color: red;
+}
+
+a:visited em{
+    color: blue
+}
+strong{
+    color:orange;
+}
+td strong{
+    color: orange;
+}
+
+p strong{
+color: red;
+}
+
+#especial
+{
+color:blueviolet;
+}
+
+a:last-child{
+    color: green;
+}
+.especial{
+    color: purple;
+}
+
+.destacado{
+    color: orange
+}
+  
+
+p ~ table{
+color:brown
+}
